@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ykyuki/WRS2018-Yumekobo-Junior.svg?token=KeXLKhyDmC4jdxmpTcZh&branch=master)](https://travis-ci.com/ykyuki/WRS2018-Yumekobo-Junior)
+
 # このプログラムについて
 World Robot Summit 2018 ジュニアカテゴリホームロボットチャレンジのYumekobo Juniorが使用した一部プログラムです。
 # 著作権
