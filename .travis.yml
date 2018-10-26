@@ -8,12 +8,12 @@ before_install:
   - sudo mv arduino-1.8.7 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 script:
-  - arduino --verify --board arduino:avr:mega $PWD/honbantesuto1/honbantesuto1.ino
-  - arduino --verify --board arduino:avr:mega $PWD/houmon/houmon.ino
-  - arduino --verify --board arduino:avr:mega $PWD/konpasu/konpasu.ino
-  - arduino --verify --board arduino:avr:mega $PWD/motordebug/motordebug.ino
-  - arduino --verify --board arduino:avr:mega $PWD/serialtest/serialtest.ino
-  - arduino --verify --board arduino:avr:mega $PWD/tyouonpa_mo-ta-/tyouonpa_mo-ta-.ino
+  - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/honbantesuto1/honbantesuto1.ino
+  - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/houmon/houmon.ino
+  - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/konpasu/konpasu.ino
+  - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/motordebug/motordebug.ino
+  - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/serialtest/serialtest.ino
+  - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/tyouonpa_mo-ta-/tyouonpa_mo-ta-.ino
 notifications:
   email:
     on_success: change
