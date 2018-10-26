@@ -7,6 +7,9 @@ before_install:
   - tar xf arduino-1.8.7-linux64.tar.xz
   - sudo mv arduino-1.8.7 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
+install:
+  - wget http://playground.arduino.cc/uploads/Main/MsTimer2.zip
+  - unzip -d /usr/local/share/arduino/libraries/ MsTimer2.zip
 script:
   - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/honbantesuto1/honbantesuto1.ino
   - arduino --verify --board arduino:avr:mega:cpu=atmega2560 $PWD/houmon/houmon.ino
